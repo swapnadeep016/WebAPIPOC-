@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>CONTACT US</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 
+	 <!-- Start Nivo Slider CSS -->
+	 <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+     <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
+	 <!-- End Nivo Slider CSS -->
+	 
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	 <script language="javascript" src="js/jquery-3.2.1.min.js"></script>
+	 	 
+	 <script language="javascript" src="js/bootstrap.min.js"></script>
+	 
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+	 
+  </head>
+  
+  <body>
+    <div class="wrapper">
+	  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" alt="" title="" class="header-logo-1"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#download">HOME</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">HOW IT WORKS?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">OUR PRODUCTS</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+	  
+	  <div class="contact-us">
+	    <h1>Say hello to cartumo</h1>
+	    <h2>Contact Us</h2>
+	  </div>
+	 
+	 <div class="contact-us-banner">
+	    <div class="container">
+	      <h2>Let's keep in touch!!!</h2>
+		  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+		  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+	 </div>
+	 
+	 <div class="contact-us-banner-part-2">
+	    <div class="container">
+		  <!--<div class="col-sm-6">
+
+		    <form action="send.php" method="POST">
+			  <div class="form-group">
+                <label for="yourname">Your name:</label>
+                <input type="yourname" class="form-control" id="yourname">
+              </div>
+			  <div class="form-group">
+                <label for="phonenumber">Phone number:</label>
+                <input type="phonenumber" class="form-control" id="phonenumber">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+			  <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+			
+		  </div> -->
+		  <!--<div class="col-sm-6">
+		    <p id="demo">Click the button to get your position.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<div id="mapholder"></div>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+		  </div> -->
+		</div>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEwfCPRdy6FI3fju7sCPx_74pWrsy07xK0SuNw3p6v9yUCfw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	 </div>
+	 
+	 <div class="company-lists">
+	    <h5>The world's best companies use segment to drive<br>growth and revenue.</h5>
+		<div class="company-lists-2">
+		  <ul>
+		     <li><img src="images/company-logo-1.jpg"></li>
+		     <li><img src="images/company-logo-2.jpg"></li>
+		     <li><img src="images/company-logo-3.jpg"></li>
+		     <li><img src="images/company-logo-4.jpg"></li>
+		     <li><img src="images/company-logo-5.jpg"></li>
+		  </ul>
+		</div>
+	 </div>
+	 
+	 <!-- Start Leaflet map -->
+	 <div id='map'></div>
+
+     <script type="text/javascript">
+
+		var map = L.map('map', {
+			center: [-17, -67],
+			zoom: 3
+		});
+
+		var wmsLayer = L.tileLayer.wms('https://demo.boundlessgeo.com/geoserver/ows?', {
+			layers: 'ne:ne'
+		}).addTo(map);
+
+     </script>
+	 <!-- End Leaflet map -->
+	 
+	 <footer class="footer-1">
+	    <div class="container footer-1-bottom-1">
+		  <div class="row">
+		    <div class="col-sm-3">
+			  <h5>Links</h5>
+			  <nav class="footer-1-menu">
+			    <ul>
+				   <li><a href="#">Reviews</a></li>
+				   <li><a href="#">How It Works?</a></li>
+				   <li><a href="#">All Status</a></li>
+				   <li><a href="#">Help & FAQs</a></li>
+				   <li><a href="#">User agreement</a></li>
+				</ul>
+			  </nav>
+			</div>
+		    <div class="col-sm-3">
+			  <h5>Company</h5>
+			  <nav class="footer-1-menu">
+			    <ul>
+				   <li><a href="#">About Cartumo</a></li>
+				   <li><a href="#">Terms</a></li>
+				   <li><a href="#">Privacy</a></li>
+				   <li><a href="#">Contact Us</a></li>
+				   <li><a href="#">Blog</a></li>
+				</ul>
+			  </nav>
+			</div>
+		    <div class="col-sm-3">
+			  <h5>Support</h5>
+			  <nav class="footer-1-menu">
+			    <ul>
+				   <li><a href="#">24/7 Support</a></li>
+				   <li><a href="#">Shoppify help center</a></li>
+				   <li><a href="#">Forums</a></li>
+				   <li><a href="#">API Documentation</a></li>
+				   <li><a href="#">Free Tools</a></li>
+				</ul>
+			  </nav>
+			</div>
+		    <div class="col-sm-3">
+			  <h5>Join the #Cartumo Here</h5>
+			  <nav class="footer-social-icons">
+			    <ul>
+				   <li><a href="#"><img src="images/facebook-icon.jpg" alt="" title="Facebook Icon"></a></li>
+				   <li><a href="#"><img src="images/twitter-icon.jpg" alt="" title="Twitter Icon"></a></li>
+				   <li><a href="#"><img src="images/linkedin-icon.jpg" alt="" title="Linkedin Icon"></a></li>
+				   <li><a href="#"><img src="images/google-plus-icon.jpg" alt="" title="Google Plus Icon"></a></li>
+				   <li><a href="#"><img src="images/youtube-icon.jpg" alt="" title="Youtube Icon"></a></li>
+				   <li><a href="#"><img src="images/pinterest-icon.jpg" alt="" title="Youtube Icon"></a></li>
+				</ul>
+			  </nav>
+			</div>
+		  </div>
+		</div>
+	 </footer>
+	 
+	 <footer class="footer-2">
+	   <p>&copy; 2017 Cartumo. All rights reserved.</p>
+	 </footer>
+	 
+	 <script src="js/jquery-1.10.2.min.js"></script> 
+	 <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> 
+     <script type="text/javascript">
+      $(window).load(function() {
+        $('#slider').nivoSlider();
+      });
+     </script> 
+     <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-36251023-1']);
+     _gaq.push(['_setDomainName', 'jqueryscript.net']);
+     _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+     </script>
+
+  </body>
+</html>
